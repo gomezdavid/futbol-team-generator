@@ -80,8 +80,9 @@ export default function TeamGenerator() {
     <div className="container mx-auto p-4 max-w-4xl">
       <div className="text-center mb-8">
         <h1 className="text-3xl font-bold mb-4">¿Quien falta?</h1>
-        <h2>Arma tus equipos de futbol o lo que quieras con amigos</h2>
+        <h2>Arma tus equipos de futbol o lo que quieras con amigos </h2>
         <br />
+
         <form onSubmit={addPlayer} className="flex gap-2 max-w-sm mx-auto mb-4">
           <Input
             value={newPlayer}
@@ -201,7 +202,13 @@ export default function TeamGenerator() {
             </CardContent>
           </Card>
         </div>
+
       )}
+      <br />
+      <br />
+      <h2>By: @alenodav on X <br /> collaborate: alenodav.mp <br /></h2>
+      <h2>go check personal web: <a href="https://alenodav.vercel.app/"><u>alenodav.com</u></a></h2>
+      <br />
     </div>
   )
 }
