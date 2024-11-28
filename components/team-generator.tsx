@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Users, Shuffle, UserMinus, UserPlus, Pin, PinOff } from 'lucide-react'
+import { Users, Shuffle, UserMinus, UserPlus, Pin } from 'lucide-react'
 import {
   Select,
   SelectContent,
