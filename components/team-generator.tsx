@@ -41,8 +41,8 @@ export default function TeamGenerator() {
   }
 
   const togglePin = (playerName: string, team: 1 | 2 | null) => {
-    setPlayers(players.map(player => 
-      player.name === playerName 
+    setPlayers(players.map(player =>
+      player.name === playerName
         ? { ...player, pinnedTeam: team }
         : player
     ))
@@ -79,7 +79,9 @@ export default function TeamGenerator() {
   return (
     <div className="container mx-auto p-4 max-w-4xl">
       <div className="text-center mb-8">
-        <h1 className="text-3xl font-bold mb-4">Soccer Team Generator</h1>
+        <h1 className="text-3xl font-bold mb-4">¿Quien falta?</h1>
+        <h2>Arma tus equipos de futbol o lo que quieras con amigos</h2>
+        <br />
         <form onSubmit={addPlayer} className="flex gap-2 max-w-sm mx-auto mb-4">
           <Input
             value={newPlayer}
@@ -112,9 +114,9 @@ export default function TeamGenerator() {
                 {player.name}
                 <Select
                   value={player.pinnedTeam?.toString() || "unpinned"}
-                  onValueChange={(value) => 
+                  onValueChange={(value) =>
                     togglePin(
-                      player.name, 
+                      player.name,
                       value === "unpinned" ? null : Number(value) as 1 | 2
                     )
                   }
